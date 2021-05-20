@@ -7,9 +7,9 @@ It has 2 data models and 2 routers : clothes and food .
 Amjad Mesmar
 <hr>
 ## Links
-* (Submission Pull Request)[]
-* (Deployed App)[https://furat-api-server.herokuapp.com]
-* (Error Report)[]
+* (Submission Pull Request)[https://github.com/AmjadMesmar/api-server/pull/1]
+* (Deployed App)[https://souls-api-server.herokuapp.com/]
+* (Action Report)[https://github.com/AmjadMesmar/api-server/actions]
 <hr>
 ## Setup
 1. `(.env)` file 

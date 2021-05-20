@@ -15,7 +15,7 @@ app.use('/api/v1/food', foodRoutes);
 app.use('/api/v1/clothes', clothesRoutes);
 app.use('*', notFoundHndler);
 app.use(errorHandler);
-app.use('/',homeRouteHandler);
+// app.use('/',homeRouteHandler);
 
 
 function homeRouteHandler(req,res){
