@@ -1,18 +1,32 @@
 # api-server
-## About 
-A REST Express API, has various endpoints tt-shirt perform CRUD operations on a Mongo Database, using the REST standards . 
-It has 2 data models and 2 routers : clothes and food . 
+
+## About
+
+A REST Express API, has various endpoints tt-shirt perform CRUD operations on a Mongo Database, using the REST standards .
+It has 2 data models and 2 routers : clothes and food .
+
 <hr>
+
 ## Author
-Amjad Mesmar
+
+#### Amjad Mesmar
+
 <hr>
+
 ## Links
-* (Submission Pull Request)[https://github.com/AmjadMesmar/api-server/pull/1]
-* (Deployed App)[https://souls-api-server.herokuapp.com/]
-* (Action Report)[https://github.com/AmjadMesmar/api-server/actions]
+
+- [Submission Pull Request](https://github.com/AmjadMesmar/api-server/pull/1)
+
+- [Deployed App](https://souls-api-server.herokuapp.com/)
+
+- [Action Report](https://github.com/AmjadMesmar/api-server/actions)
+
 <hr>
+
 ## Setup
-1. `(.env)` file 
+
+1. ***(.env)*** file:
+
 ```
 PORT = 5000
 
@@ -22,21 +36,29 @@ MONGOOSE_TEST_URI=mongodb://souls:55555@cluster0-shard-00-00.upvew.mongodb.net:2
 ```
 
 2. Install the following dependencies
+
 ```
 npm i cors dotenv express morgan mongoose
 npm i -D jest supertest
 mongod --dbpath=/Users/path/to/data/db
 ```
-## Running the app 
+
+## Running the app
+
 1. clone the repo.
 2. Enter the command `npm start`
 3. Use endpoints :
-   ## Food
-  ### * `/api/v1/food`
+
+## Food
+
+### `*/api/v1/food`
+
 <br>
-- **Method** : GET 
+
+- **Method**: GET
 - **CRUD Operation** : Read / Gets All Food Records
 - **Response Body**   : JSON
+
 ```
 [
     {
@@ -53,10 +75,13 @@ mongod --dbpath=/Users/path/to/data/db
     }
 ]
 ```
+
 <br>
-- **Method** : POST 
+
+- **Method**: POST
 - **CRUD Operation** : Create / Add a Record
 - **Response Body**   : JSON
+
 ```
     {
         "_id": "60a5938ee109aa218e6f5a6f",
@@ -66,11 +91,15 @@ mongod --dbpath=/Users/path/to/data/db
     }
 ```
 <br>
- ### * `/api/v1/food/id`
-<br>
-- **Method** : GET 
+
+ ### `*/api/v1/food/id`
+
+`br>
+
+- **Method**: GET
 - **CRUD Operation** : Read / Get One Record
 - **Response Body**   : JSON
+
 ```
     {
         "_id": "60a5938ee109aa218e6f5a6f",
@@ -79,10 +108,13 @@ mongod --dbpath=/Users/path/to/data/db
         "__v": 0
     }
 ```
+
 <br>
-- **Method** : PUT 
+
+- **Method**: PUT
 - **CRUD Operation** : UPDATE / Update a Record
 - **Response Body**   : JSON
+
 ```
     {
         "_id": "60a5938ee109aa218e6f5a6f",
@@ -91,10 +123,13 @@ mongod --dbpath=/Users/path/to/data/db
         "__v": 0
     }
 ``` 
+
 <br>
-- **Method** : DELETE 
+
+- **Method**: DELETE
 - **CRUD Operation** : DELETE / Delete a Record
 - **Response Body**   : JSON
+
 ```
     {
         "_id": "60a5938ee109aa218e6f5a6f",
@@ -103,15 +138,23 @@ mongod --dbpath=/Users/path/to/data/db
         "__v": 0
     }
 ```
+
 <br><br><br>
+
 <hr>
+
 <br><br>
-   ## Clothes
-  ### * `/api/v1/clothes`
-<br>
-- **Method** : GET 
+
+## Clothes
+
+### `*/api/v1/clothes`
+
+`br>
+
+- **Method**: GET
 - **CRUD Operation** : Read / Gets All clothes Records
 - **Response Body**  : JSON
+
 ```
 [
     {
@@ -128,22 +171,32 @@ mongod --dbpath=/Users/path/to/data/db
     }
 ]
 ```
+
 <br>
-- **Method** : POST 
+
+- **Method**: POST
 - **CRUD Operation** : Create / Add a Record
 - **Response Body**   : JSON
+
 ```
 {
     "top":"socks",
     "bottom":"jeans"
 }
 ```
+
 <br>
- ### * `/api/v1/clothes/id`
+
+### `*/api/v1/clothes/id`
+
 <br>
-- **Method** : GET 
+
+**Method**: GET
+
 - **CRUD Operation** : Read / Get One Record
+
 - **Response Body** : JSON
+
 ```
  {
         "_id": "60a5938ee109aa218e6f5a6f",
@@ -153,9 +206,11 @@ mongod --dbpath=/Users/path/to/data/db
     }
 ```
 <br>
-- **Method** : PUT 
+
+- **Method**: PUT:
 - **CRUD Operation** : UPDATE / Update a Record
 - **Response Body**  : JSON
+
 ```
  {
         "_id": "60a5938ee109aa218e6f5a6f",
@@ -164,10 +219,13 @@ mongod --dbpath=/Users/path/to/data/db
         "__v": 0
     }
 ```
+
 <br>
-- **Method** : DELETE 
+
+- **Method**: DELETE:
 - **CRUD Operation** : DELETE / Delete a Record
 - **Response Body**   : JSON
+
 ```
  {
      "_id": "60a5938ee109aa218e6f5a6f",
@@ -176,14 +234,22 @@ mongod --dbpath=/Users/path/to/data/db
       "__v": 0
     }
 ```
-4. Test . 
-* There's 2 test files . logger.test.js and server.test.js
-* In terminal run :
+
+4. Test:
+
+- There's 2 test files . logger.test.js and server.test.js
+- In terminal run :
+
 ```
 npm test
 ```
+
 <br><br><br>
+
 <hr>
+
 <br><br>
+
 ## UML Diagram
+
 ![Uml diagram](./Lab-04.png)
